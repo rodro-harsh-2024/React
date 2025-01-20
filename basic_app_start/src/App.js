@@ -1,6 +1,11 @@
+import Test1 from './Test1'
+
 function App() {
   return (
-   <h1>Hello World</h1>
+    <>
+      <Test1 />
+      <h1>Hello World</h1>
+    </>
   );
 }
 
