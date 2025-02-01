@@ -5,15 +5,20 @@ import './App.css'
 
 function App() {
 
-  let [counter,setCounter] = useState(15)
+  const [counter,setCounter] = useState(15)
 
   // let counter  = 15; 
 
   const addValue = () =>{
  
     if(counter<20){
-      counter+=1
-      setCounter(counter)
+      
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+
+      
+      
       console.log("Clicked",counter)
     }
   
@@ -21,7 +26,7 @@ function App() {
 
   const removeValue = ()=>{
     if(counter>0){
-      setCounter(counter-1)
+      setCounter(counter - 1)
     }
   }
 
