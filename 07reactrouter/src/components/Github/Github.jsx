@@ -3,16 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 function Github() {
   const data = useLoaderData();
-  //   const [data, setData] = useState([]);
 
-  //   useEffect(() => {
-  //     fetch("https://api.github.com/users/rodro-harsh-2024")
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         console.log(data);
-  //         setData(data);
-  //       });
-  //   }, []);
   console.log(data);
 
   return (
